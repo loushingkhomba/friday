@@ -1,0 +1,2 @@
+# Optional cloud TTS. Requires internet while speaking.
+edge-tts>=7.2,<8

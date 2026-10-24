@@ -1,0 +1,51 @@
+# Secrets and user-owned policy
+**/.env
+**/.env.*
+!**/.env.example
+voice_assistant/guardrails.json
+**/credentials.*
+**/secrets.*
+**/*.pem
+**/*.key
+
+# Personal data, conversation records, and databases
+voice_assistant/data.json
+voice_assistant/logs/
+voice_assistant/memory_data/
+voice_assistant/*.sqlite
+voice_assistant/*.sqlite3
+voice_assistant/*.db
+voice_assistant/*.dump
+voice_assistant/*.backup
+**/Friday'sFolder/
+**/conversation_logs/
+**/*.log
+**/*.jsonl
+
+# Voice recordings and generated speech
+**/*.wav
+**/*.mp3
+**/*.onnx
+**/*.pt
+**/*.pth
+**/*.safetensors
+**/*.gguf
+
+# Local model weights/caches; keep only notices/config metadata
+voice_assistant/models/**
+!voice_assistant/models/**/MODEL_NOTICE.md
+!voice_assistant/models/**/MODEL_CARD
+!voice_assistant/models/**/preprocessor_config.json
+
+# Local environments, downloaded wheels, and Python build artifacts
+**/.venv/
+**/.venv-*/
+voice_assistant/offline_packages/
+**/__pycache__/
+*.py[cod]
+
+# Private backups and console captures
+**/backups/
+**/*baseline*.dump
+err.txt
+out.txt
