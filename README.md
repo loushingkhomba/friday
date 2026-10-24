@@ -1,0 +1,2 @@
+# friday
+AI Assistant
