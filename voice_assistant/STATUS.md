@@ -8,7 +8,7 @@
 
 ### Update signature
 
-- **Updated by Codex - 2026-10-24:** Friday GitHub repository received: `https://github.com/loushingkhomba/friday.git` (public). Prepared a public-safe freeze copy with environment manifest, ignore protections, anonymized profile/location examples, generic file-folder default, and private user data excluded. PostgreSQL and user-owned configuration backups remain outside the repository. Baseline commit, tag, push, and `friday-2-orchestrator` creation are pending.
+- **Updated by Codex - 2026-10-24:** Friday GitHub repository received: `https://github.com/loushingkhomba/friday.git` (public). Prepared a public-safe freeze copy with environment manifest, ignore protections, anonymized profile/location examples, generic file-folder default, and private user data excluded. PostgreSQL and user-owned configuration backups remain outside the repository. Frozen baseline committed as `ba25b5f`, tagged `friday-baseline-2026-10-24`, and pushed to `main`. Branch `friday-2-orchestrator` is created and pushed.
 
 - **Updated by Codex - 2026-10-24:** Added six user-provided development rules to `STEERING.md`: preserve and test the working baseline, make one architectural change at a time, separate LLM planning from Python validation/execution, keep components modular, measure before optimization, and keep learned behavior separate from permissions.
 
@@ -217,3 +217,4 @@ From `voice_assistant\`:
 ```bat
 python -m unittest test_intent_router test_honesty test_reliability test_file_trash test_file_intents test_capabilities test_self_improvement
 ```
+- **Updated by Codex - 2026-10-24:** Public-safe baseline `ba25b5f` is on GitHub `main`; tag `friday-baseline-2026-10-24` marks the frozen application commit. Development branch `friday-2-orchestrator` exists remotely. PostgreSQL and user-owned config backups remain local and outside Git. No project tests or live runtime checks were run during this freeze.
